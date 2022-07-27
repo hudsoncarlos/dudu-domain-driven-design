@@ -21,8 +21,13 @@ jobs:
         with:
           dotnet-version: 6.0.x
       - name: Restore dependencies
-        run: dotnet restore src/HC.EstudoDDD.sln/
+        run: dotnet restore src/HC.EstudoDDD
       - name: Build
-        run: dotnet build src/HC.EstudoDDD.sln/
+        run: dotnet build src/HC.EstudoDDD.Api/
+        run: dotnet build src/HC.EstudoDDD.Application/
+        run: dotnet build src/HC.EstudoDDD.CrossCutting/
+        run: dotnet build src/HC.EstudoDDD.Domain/
+        run: dotnet build src/HC.EstudoDDD.Domain.Core/
+        run: dotnet build src/HC.EstudoDDD.Infrastructure/
       - name: Teste Unidade
-        run: dotnet test src/HC.EstudoDDD.sln/
+        run: dotnet test src/HC.EstudoDDD.Tests/
