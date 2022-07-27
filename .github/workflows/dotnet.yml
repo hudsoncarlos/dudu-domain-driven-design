@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+      - release/*
+      - hotfix/*
   pull_request:
     branches:
       - master
@@ -13,14 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Setup .NET
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v2
         with:
           dotnet-version: 6.0.x
       - name: Restore dependencies
-        run: dotnet restore src/HC.EstudoDDD/
+        run: dotnet restore src/HC.EstudoDDD.sln/
       - name: Build
-        run: dotnet build src/HC.EstudoDDD/
+        run: dotnet build src/HC.EstudoDDD.sln/
       - name: Teste Unidade
-        run: dotnet test src/HC.EstudoDDD.Test/
+        run: dotnet test src/HC.EstudoDDD.sln/
