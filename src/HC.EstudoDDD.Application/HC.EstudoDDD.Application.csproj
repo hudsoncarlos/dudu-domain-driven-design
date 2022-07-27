@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HC.EstudoDDD.CrossCutting\HC.EstudoDDD.CrossCutting.csproj" />
+    <ProjectReference Include="..\HC.EstudoDDD.Domain\HC.EstudoDDD.Domain.csproj" />
+    <ProjectReference Include="..\HC.EstudoDDD.Infrastructure\HC.EstudoDDD.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
