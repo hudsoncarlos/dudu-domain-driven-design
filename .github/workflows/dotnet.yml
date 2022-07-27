@@ -21,8 +21,8 @@ jobs:
         with:
           dotnet-version: 6.0.x
       - name: Restore dependencies
-        run: dotnet restore src/HC.EstudoDDD
+        run: dotnet restore src/HC.EstudoDDD.Api/
       - name: Build
-        run: dotnet build src/HC.EstudoDDD.Api/        
+        run: dotnet build src/HC.EstudoDDD.Api/
       - name: Teste Unidade
         run: dotnet test src/HC.EstudoDDD.Tests/
