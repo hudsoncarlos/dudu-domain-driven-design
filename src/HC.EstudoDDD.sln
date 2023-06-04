@@ -3,19 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.EstudoDDD.Api", "HC.EstudoDDD.Api\HC.EstudoDDD.Api.csproj", "{DE65EAF8-B338-4F54-B44C-8FADFF79D3CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.EstudoDDD.Api", "HC.EstudoDDD.Api\HC.EstudoDDD.Api.csproj", "{DE65EAF8-B338-4F54-B44C-8FADFF79D3CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.EstudoDDD.Application", "HC.EstudoDDD.Application\HC.EstudoDDD.Application.csproj", "{5B58250F-1A0B-4300-A5EF-91D0E9A706AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.EstudoDDD.Application", "HC.EstudoDDD.Application\HC.EstudoDDD.Application.csproj", "{5B58250F-1A0B-4300-A5EF-91D0E9A706AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.EstudoDDD.CrossCutting", "HC.EstudoDDD.CrossCutting\HC.EstudoDDD.CrossCutting.csproj", "{9E483F2C-CC6B-4686-B446-28A68EB8304B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.EstudoDDD.CrossCutting", "HC.EstudoDDD.CrossCutting\HC.EstudoDDD.CrossCutting.csproj", "{9E483F2C-CC6B-4686-B446-28A68EB8304B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.EstudoDDD.Domain", "HC.EstudoDDD.Domain\HC.EstudoDDD.Domain.csproj", "{C6664CDC-A38C-4328-A99B-9BF34DE993CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.EstudoDDD.Domain", "HC.EstudoDDD.Domain\HC.EstudoDDD.Domain.csproj", "{C6664CDC-A38C-4328-A99B-9BF34DE993CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.EstudoDDD.Domain.Core", "HC.EstudoDDD.Domain.Core\HC.EstudoDDD.Domain.Core.csproj", "{1C311045-C9BA-418A-85AF-2A0478B70DF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.EstudoDDD.Domain.Core", "HC.EstudoDDD.Domain.Core\HC.EstudoDDD.Domain.Core.csproj", "{1C311045-C9BA-418A-85AF-2A0478B70DF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.EstudoDDD.Infrastructure", "HC.EstudoDDD.Infrastructure\HC.EstudoDDD.Infrastructure.csproj", "{EB7C361A-9661-420A-A314-255711E58B68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.EstudoDDD.Infrastructure", "HC.EstudoDDD.Infrastructure\HC.EstudoDDD.Infrastructure.csproj", "{EB7C361A-9661-420A-A314-255711E58B68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.EstudoDDD.Tests", "HC.EstudoDDD.Tests\HC.EstudoDDD.Tests.csproj", "{F91E0D45-C71E-4651-A746-B4CFE50AE5C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HC.EstudoDDD.Tests", "HC.EstudoDDD.Tests\HC.EstudoDDD.Tests.csproj", "{F91E0D45-C71E-4651-A746-B4CFE50AE5C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{E9368EF1-C866-48CF-B125-D143EC91825E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{3AE944A3-604C-4CBB-94FD-26B79E8D8D1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{8942EF2F-3A8A-4E85-90E3-819395B94945}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{83072781-5222-40E0-A415-40EF4D374868}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{9A25E89F-7A55-421A-9E16-9215101F5281}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{BC285F49-0105-48E3-BB6E-D3543C5F5AF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{F208E5CE-8FD9-47C0-8AC4-E161B7E8907F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +68,16 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE65EAF8-B338-4F54-B44C-8FADFF79D3CF} = {3AE944A3-604C-4CBB-94FD-26B79E8D8D1D}
+		{5B58250F-1A0B-4300-A5EF-91D0E9A706AE} = {8942EF2F-3A8A-4E85-90E3-819395B94945}
+		{9E483F2C-CC6B-4686-B446-28A68EB8304B} = {F208E5CE-8FD9-47C0-8AC4-E161B7E8907F}
+		{C6664CDC-A38C-4328-A99B-9BF34DE993CD} = {83072781-5222-40E0-A415-40EF4D374868}
+		{1C311045-C9BA-418A-85AF-2A0478B70DF9} = {83072781-5222-40E0-A415-40EF4D374868}
+		{EB7C361A-9661-420A-A314-255711E58B68} = {BC285F49-0105-48E3-BB6E-D3543C5F5AF8}
+		{BC285F49-0105-48E3-BB6E-D3543C5F5AF8} = {9A25E89F-7A55-421A-9E16-9215101F5281}
+		{F208E5CE-8FD9-47C0-8AC4-E161B7E8907F} = {9A25E89F-7A55-421A-9E16-9215101F5281}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B4DEA4D-BC9D-4CFC-B363-B6793BC7AC2C}

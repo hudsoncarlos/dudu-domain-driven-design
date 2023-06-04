@@ -5,27 +5,27 @@ using System.Text.RegularExpressions;
 namespace HC.EstudoDDD.Api.Filters
 {
     /// <summary>
-    /// BasePath Document Filter sets BasePath property of Swagger and removes it from the individual URL paths
+    /// O filtro de documento BasePath define a propriedade BasePath do Swagger e a remove dos caminhos de URL individuais
     /// </summary>
     public class BasePathFilter : IDocumentFilter
     {
         /// <summary>
-        /// Constructor
+        /// Construtor
         /// </summary>
-        /// <param name="basePath">BasePath to remove from Operations</param>
+        /// <param name="basePath">BasePath para remover das operações</param>
         public BasePathFilter(string basePath)
         {
             BasePath = basePath;
         }
 
         /// <summary>
-        /// Gets the BasePath of the Swagger Doc
+        /// Obtém o BasePath do Swagger Doc
         /// </summary>
-        /// <returns>The BasePath of the Swagger Doc</returns>
+        /// <returns>O BasePath do Swagger Doc</returns>
         public string BasePath { get; }
 
         /// <summary>
-        /// Apply the filter
+        /// Aplique o filtro
         /// </summary>
         /// <param name="swaggerDoc">OpenApiDocument</param>
         /// <param name="context">FilterContext</param>

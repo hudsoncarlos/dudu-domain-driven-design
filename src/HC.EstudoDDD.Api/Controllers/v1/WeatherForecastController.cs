@@ -1,4 +1,3 @@
-using HC.EstudoDDD.Api.Controllers.Base;
 using HC.EstudoDDD.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 

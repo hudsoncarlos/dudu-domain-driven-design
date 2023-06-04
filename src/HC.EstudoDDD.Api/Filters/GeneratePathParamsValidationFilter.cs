@@ -2,17 +2,16 @@
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.ComponentModel.DataAnnotations;
-using System.Text.RegularExpressions;
 
 namespace HC.EstudoDDD.Api.Filters
 {
     /// <summary>
-    /// Path Parameter Validation Rules Filter
+    /// Caminho das validações de parâmetros para filtro de regras.
     /// </summary>
     public class GeneratePathParamsValidationFilter : IOperationFilter
     {
         /// <summary>
-        /// Constructor
+        /// Construtor
         /// </summary>
         /// <param name="operation">Operation</param>
         /// <param name="context">OperationFilterContext</param>

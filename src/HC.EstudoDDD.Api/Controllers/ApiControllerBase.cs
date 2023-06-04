@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
-using Flunt.Notifications;
-using HC.EstudoDDD.Application.Models;
 
-namespace HC.EstudoDDD.Api.Controllers.Base
+namespace HC.EstudoDDD.Api.Controllers
 {
     /// <summary>
     /// Classe criada para sobrecargas da ControllerBase
