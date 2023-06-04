@@ -1,4 +1,4 @@
-namespace HC.EstudoDDD.Api
+namespace HC.EstudoDDD.Application.Models
 {
     public class WeatherForecast
     {

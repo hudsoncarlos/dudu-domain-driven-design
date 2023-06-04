@@ -1,10 +1,13 @@
+using HC.EstudoDDD.Api.Controllers.Base;
+using HC.EstudoDDD.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HC.EstudoDDD.Api.Controllers
+namespace HC.EstudoDDD.Api.Controllers.v1
 {
     [ApiController]
-    [Route("v1/controller")]
-    public class WeatherForecastController : ControllerBase
+    [ApiVersion("1")]
+    [Route("v{version:apiVersion}/WeatherForecast")]
+    public class WeatherForecastController : ApiControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
